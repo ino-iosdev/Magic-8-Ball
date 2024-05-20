@@ -21,14 +21,44 @@
                                 <rect key="frame" x="-49" y="0.0" width="439" height="945"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as4-XB-zCP">
+                                <rect key="frame" x="152" y="535" width="119" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="capsule" titleAlignment="center">
+                                    <backgroundConfiguration key="background" strokeWidth="1" strokeOutset="-8">
+                                        <color key="backgroundColor" red="0.98071211650000001" green="0.0" blue="0.99183422330000004" alpha="0.46440397350993379" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ASK">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="0.10885481277152097" green="0.070468653109997864" blue="0.1491279987373737" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="NSColor" red="0.46576028851355117" green="0.88129441153051402" blue="0.99183422327041626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="33" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="52" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" systemColor="systemMintColor"/>
+                                    <color key="baseBackgroundColor" red="0.72398161039999998" green="0.4686794057" blue="0.99183422330000004" alpha="0.5797288907" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="askButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TE4-kA-fJi"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball_bgRemoved" translatesAutoresizingMaskIntoConstraints="NO" id="kXh-UL-j5U">
-                                <rect key="frame" x="49" y="-122" width="325" height="676"/>
+                                <rect key="frame" x="49" y="78" width="325" height="325"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="ballAnswer" destination="kXh-UL-j5U" id="3is-D1-fOu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,9 +67,12 @@
     </scenes>
     <resources>
         <image name="8BallBg_new" width="1170" height="2532"/>
-        <image name="ball_bgRemoved" width="1024" height="1024"/>
+        <image name="ball_bgRemoved" width="341.33334350585938" height="341.33334350585938"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
